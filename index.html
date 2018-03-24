@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+    <title>WeUI</title>
+    <link rel="stylesheet" href="style/weui.css"/>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./animate.css">
+</head>
+<body ontouchstart>
+<div class="page index1">
+    <div class="app-body">
+        <div class="member-point-wrap">
+            <div class="point-display"></div>
+            <div class="introduce">
+                <div class="yiy-img"></div>
+                <div class="goMovie">看看他人怎么吃</div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="https://res.wx.qq.com/open/libs/weuijs/1.0.0/weui.min.js"></script>
+<script src="./zepto.min.js"></script>
+<script>
+    var yiy = $('.yiy-img');
+    yiy.on('click', function () {
+        yiy.addClass('animated shake');
+        setTimeout(function () {
+            yiy.removeClass('animated shake');
+        },2000)
+    })
+    $('.goMovie').on('click', function () {
+        location.href = 'eat.html'
+    })
+</script>
+</html>

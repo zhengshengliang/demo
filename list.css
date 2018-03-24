@@ -1,0 +1,51 @@
+.page__title, .page__desc {
+    text-align: center;
+}
+
+.h-banner img {
+    width: 20px;
+}
+
+.h-banner .zhekou {
+    background-color: #E5004F;
+    float: right;
+    -webkit-border-radius: 1rem;
+    border-radius: 5px;
+    border: none;
+    color: #111111;
+    width: 70px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.h-banner .zhekou span{
+    color: #fff;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.h-banner2 {
+    margin-top: 10px;
+    text-align: center;
+}
+.h-banner2 img {
+    width: 100px;
+    height: 100px;
+}
+
+.icon-ww {
+    width: 15px;
+}
+
+.weui-media-box__desc div{
+    display: inline-block;
+}
+
+.nedia-left {
+    margin-left: 10px;
+}
+
+.media-right {
+    float: right;
+    margin-right: 10px;
+}

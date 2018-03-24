@@ -1,0 +1,30 @@
+.media-toast {
+    position: fixed;
+    z-index: 5000;
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+    min-height: 7.6em;
+    top: 0px;
+    background: rgba(17, 17, 17, 0.7);
+    text-align: center;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+.icon-ww {
+    width: 15px;
+}
+
+.weui-media-box__desc div{
+    display: inline-block;
+}
+
+.nedia-left {
+    margin-left: 10px;
+}
+
+.media-right {
+    float: right;
+    margin-right: 10px;
+}

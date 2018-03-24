@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+    <title>WeUI</title>
+    <link rel="stylesheet" href="style/weui.css"/>
+    <link rel="stylesheet" href="./animate.css">
+    <link rel="stylesheet" href="./example.css"/>
+    <link rel="stylesheet" href="./index.css">
+    <script src="jquery.js"></script>
+    <link rel="stylesheet" href="./box.css">
+
+    <script>
+        function shake(obj) {
+            box_left = parseInt(obj.css("left")); //获取当前对象左边距离
+            for (var i = 1; 4 >= i; i++) { //左右摇动各3次
+                obj.animate({
+                        top: box_left - (60 - 10 * i)
+                    },
+                    70);
+                obj.animate({
+                        top: box_left + 2 * (60 - 10 * i)
+                    },
+                    70);
+            }
+        }
+
+        $(function() {
+            $("#gift").click(function() { //点击百宝箱
+                shake($(this)); //摇头效果
+                $("#tips").fadeOut(1000); //隐藏“点击开启百宝箱提示”
+                $(this).animate({ //摇头后向下滑动
+                        top: '250px'
+                    },
+                    500,
+                    function() {
+                        $(this).css("backgroundImage", "url(images/2.png)"); //替换开启后的图片
+                        // alert("恭喜获得我的一个💋💋吻💋💋！")
+                    });
+            })
+        })
+    </script>
+</head>
+<body ontouchstart>
+<div class="page">
+    <div class="page__hd">
+        <h1 class="page__title">购买成功</h1>
+    </div>
+    <div class="page__bd">
+        <div class="weui-form-preview">
+            <div class="weui-form-preview__hd">
+                <div class="weui-form-preview__item">
+                    <label class="weui-form-preview__label">付款金额</label>
+                    <em class="weui-form-preview__value">¥6.00</em>
+                </div>
+            </div>
+            <div class="weui-form-preview__bd">
+                <div class="weui-form-preview__item">
+                    <label class="weui-form-preview__label">方便面</label>
+                    <span class="weui-form-preview__value">￥3.00</span>
+                </div>
+                <div class="weui-form-preview__item">
+                    <label class="weui-form-preview__label">矿泉水</label>
+                    <span class="weui-form-preview__value">￥1.00</span>
+                </div>
+                <div class="weui-form-preview__item">
+                    <label class="weui-form-preview__label">卤蛋</label>
+                    <span class="weui-form-preview__value">￥2.00</span>
+                </div>
+            </div>
+            <div class="weui-form-preview__ft">
+                <a class="weui-form-preview__btn weui-form-preview__btn_primary" href="javascript:">&nbsp;</a>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="bg"></div>
+        <div class="open-has">
+            <div class="tips" id="tips">
+                <i class="arrow"></i>
+            </div>
+        </div>
+        <div class="gift" id="gift"></div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="https://res.wx.qq.com/open/libs/weuijs/1.0.0/weui.min.js"></script>
+<script src="./zepto.min.js"></script>
+<script>
+
+</script>
+</html>

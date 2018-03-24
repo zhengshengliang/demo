@@ -1,0 +1,52 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: "PingFang SC", "Hiragino Sans GB", "Helvetica Neue", Roboto, Noto, sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    -webkit-touch-callout: none;
+    -webkit-font-smoothing: antialiased;
+    text-justify: 100%;
+    color: #111;
+    position: relative;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.index1 {
+    background-color: #fc0;
+    height: 100%;
+}
+
+.member-point-wrap .point-display {
+    padding: 40px 0;
+    text-align: center;
+    height: 20%;
+}
+
+.member-point-wrap .introduce {
+    padding: 20px;
+    text-align: center;
+}
+
+.member-point-wrap .introduce .yiy-img {
+    background: url(./images/yiy_con.png) round;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.member-point-wrap .introduce .goMovie {
+    border-radius: 5px;
+    border: 1px solid #333333;
+    color: #333333;
+    height: 50px;
+    line-height: 50px;
+    width: 50%;
+    margin: 100px auto;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.page__title {
+    text-align: center;
+}
